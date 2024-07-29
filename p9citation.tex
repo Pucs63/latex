@@ -1,0 +1,21 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+
+\begin{document}
+
+\begin{center}
+    \Large{\textbf{References Demo}}
+\end{center}
+
+\section{Introduction}
+%\section{Related Work}
+
+For disaster management, uncertainty handling is the main key problem. But, in Joint Service deployment and Requests Allocation~(JSR) domain, research work mainly uses the approaches such as deterministic optimization \cite{hardtoshare, multicell, bandwidth}, Lyapunov optimization \cite{dataintensive}, stochastic optimization, replication of services to achieve high reliability, and forecasting of user requests using machine learning without considering uncertainty. In deterministic optimization \cite{edgeuav}, request demand is known before the run. However, in online optimization, time is divided into slots and performs optimization per slot basis, which does not consider uncertain demand. Even if we used any probability distribution to model demand, it does not provide the correct model/pattern to define the uncertain data \cite{edgeuncertainty}. Using a replication approach to achieve high availability also incurs extra resource cost \cite{robust}. Using the forecasting method also, we can not predict the impact of uncertain events on the requests, which may lead to under-provisioning/over-provisioning resources to process the required tasks \cite{rsome}.
+
+\section{Experiment Setup and Performance Parameters}
+To demonstrate the efficiency of the proposed approaches, we will simulate the scenario for an urban site affected by any natural calamity \cite{oilindustry}. To implement optimization models, we will use the IBM Cplex Optimizer tool \cite{cplex}.
+
+\bibliographystyle{IEEEtran}
+\bibliography{ref}
+\end{document}
