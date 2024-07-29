@@ -1,0 +1,31 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{algorithm2e}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+\begin{document}
+
+\section*{Bubble Sort Algorithm}
+
+Algorithm to sort an array of numbers using Bubble Sort.
+
+\vspace{1cm}
+\begin{algorithm}[H]
+\caption{BubbleSort($A[1..n]$)}
+\SetAlgoLined
+\DontPrintSemicolon
+\KwIn{An array $A$ of $n$ elements}
+\KwOut{Array $A$ sorted in non-decreasing order}
+\For{$i \gets 1$ \KwTo $n-1$}{
+    \For{$j \gets 1$ \KwTo $n-i$}{
+        \If{$A[j] > A[j+1]$}{
+            swap $A[j]$ and $A[j+1]$\;
+        }
+    }
+}
+\Return{$A$}\;
+\end{algorithm}
+
+\end{document}
